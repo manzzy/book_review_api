@@ -1,1 +1,39 @@
 POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Abdi",
+    "phone": 1232325,
+    "email": "abdi@gmail.com",
+    "password": "123",
+    "role": "USER"
+}
+
+###
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/5
+
+### 
+PATCH  http://localhost:5000/users/5
+Content-Type: application/json
+
+{
+    "name": "Abeba"
+}
+
+###
+DELETE  http://localhost:5000/users/5
+
+###
+POST  http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "josh@gmail.com",
+    "password": "123abc"
+}
+
+###
+GET http://localhost:5000/logout

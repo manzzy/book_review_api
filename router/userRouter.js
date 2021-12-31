@@ -4,6 +4,7 @@ const db = require('../db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const cookieParser = require('cookie-parser');
+const res = require('express/lib/response');
 
 router.use(cookieParser());
 
@@ -118,6 +119,6 @@ router.post('/login', (req, res)=> {
     // token JWT 
 })
 
-// LOGIN
+
 
 module.exports = router;
